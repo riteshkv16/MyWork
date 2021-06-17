@@ -1,1 +1,13 @@
-Read me for Scotty bot.
+Introduction:
+The Scotty Bot I developed is a CLI application that prompts user input to target one or multiple products on the website Scotty Cameron. The bot has been tested by clients 
+and has checked out over $7k worth of limited edition golf putters thus far.
+
+How it Works:
+The bot asks the user three questions before running: which page to monitor (accessory or putters page), which product on the page to buy, and
+how many pages to run (supports only 2 pages thus far). If the user selects the putters page, and runs two pages, then both pages will go to the login page of Scotty Cameron.
+From there the user will have to login on both pages, and then go to the putters page on each page. The second page will refresh every 3 seconds to see if the item
+is in stock or not (checks if add to cart button says "SOLD OUT" or not). The first page the user will have to manually refresh until the item is in stock. Once the
+bot has detected the item is in stock, it uses JavaScript injections with Puppeteer to checkout the item within 4 seconds.
+
+Languages/Libraries/Frameworks Used:
+JavaScript, NodeJS, Puppeteer, Prompt-Sync
