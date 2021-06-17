@@ -1,0 +1,12 @@
+Introduction:
+The Walmart Pikcup Bot is a CLI app I have developed uses Brickseek to scan for an item's availability in Walmart stores within a 100 mile radius of the address the user inputs.
+This bot has been used by clients to checkout consoles, machinery, and has been mainly used to checkout pools. 
+
+How It Works:
+The bot prompts the user for basic input it needs to run such as user zip code, item sku, etc. Once the bot gets required input, it goes to the login page where the user must manualy login. 
+After the user logs in, the bot takes care of everything else as it periodically checks Walmart stores within a 100 mile radius to see if the target item is in stock. 
+The user decides after how many seconds the bot re-scans for item inventory. Once the item is detected to be in stock, it goes to that specific Walmart order's store
+and checks out the product there for pickup only. 
+
+Languages/Libraries/Frameworks Used:
+JavaScript, NodeJS, PuppeteerJS, Prompt-Sync
